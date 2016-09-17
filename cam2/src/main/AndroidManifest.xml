@@ -19,8 +19,8 @@
     android:required="false"/>
 
   <application>
-    <activity android:name="CameraActivity"/>
-    <activity android:name="VideoRecorderActivity"/>
+    <activity android:name="CameraActivity" android:theme="@style/Theme.AppCompat.Light" />
+    <activity android:name="VideoRecorderActivity" android:theme="@style/Theme.AppCompat.Light" />
   </application>
 
 </manifest>

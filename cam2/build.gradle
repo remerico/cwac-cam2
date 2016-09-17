@@ -3,11 +3,12 @@ apply plugin: 'com.android.library'
 dependencies {
     compile 'com.github.clans:fab:1.6.2'
     compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
 }
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    buildToolsVersion "24.0.1"
 
     defaultConfig {
         minSdkVersion 15

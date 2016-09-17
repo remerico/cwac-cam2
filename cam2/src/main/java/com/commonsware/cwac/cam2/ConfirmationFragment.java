@@ -14,11 +14,12 @@
 
 package com.commonsware.cwac.cam2;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -83,7 +84,8 @@ public class ConfirmationFragment extends Fragment {
     super.onHiddenChanged(isHidden);
 
     if (!isHidden) {
-      ActionBar ab=getActivity().getActionBar();
+
+      ActionBar ab = ((AppCompatActivity)getActivity()).getSupportActionBar();
 
       if (ab==null) {
         throw new IllegalStateException("CameraActivity confirmation requires an action bar!");
